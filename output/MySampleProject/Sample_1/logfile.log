@@ -1,0 +1,325 @@
+2021-09-24 07:39:28.210 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:28.216 | INFO     | src.ARKAutoML.create_folds:create_folds:26 - Fold 1 : 6442, 1611
+2021-09-24 07:39:28.219 | INFO     | src.ARKAutoML.create_folds:create_folds:26 - Fold 2 : 6442, 1611
+2021-09-24 07:39:28.220 | INFO     | src.ARKAutoML.create_folds:create_folds:26 - Fold 3 : 6442, 1611
+2021-09-24 07:39:28.221 | INFO     | src.ARKAutoML.create_folds:create_folds:26 - Fold 4 : 6443, 1610
+2021-09-24 07:39:28.223 | INFO     | src.ARKAutoML.create_folds:create_folds:26 - Fold 5 : 6443, 1610
+2021-09-24 07:39:28.553 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 0, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 40, 'min_child_samples': 225, 'min_child_weight': 3, 'subsample': 0.7, 'colsample_bytree': 0.6, 'reg_alpha': 39.1, 'reg_lambda': 72.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.985
+2021-09-24 07:39:28.810 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 1, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 10, 'min_child_samples': 288, 'min_child_weight': 1, 'subsample': 1.0, 'colsample_bytree': 1.0, 'reg_alpha': 56.1, 'reg_lambda': 64.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.986
+2021-09-24 07:39:28.924 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 2, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 31, 'min_child_samples': 324, 'min_child_weight': 4, 'subsample': 0.6, 'colsample_bytree': 0.7, 'reg_alpha': 3.1, 'reg_lambda': 98.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.987
+2021-09-24 07:39:29.035 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 3, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 20, 'min_child_samples': 105, 'min_child_weight': 4, 'subsample': 1.0, 'colsample_bytree': 0.8, 'reg_alpha': 93.1, 'reg_lambda': 65.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.983
+2021-09-24 07:39:29.148 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 4, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 30, 'min_child_samples': 477, 'min_child_weight': 3, 'subsample': 0.9, 'colsample_bytree': 0.9, 'reg_alpha': 17.1, 'reg_lambda': 7.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.961  Recall_0 : 0.995  Recall_1 : 0.891  Roc_auc : 0.988
+2021-09-24 07:39:29.261 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 5, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 43, 'min_child_samples': 296, 'min_child_weight': 5, 'subsample': 1.0, 'colsample_bytree': 0.7, 'reg_alpha': 39.1, 'reg_lambda': 6.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.985
+2021-09-24 07:39:29.373 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 6, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 18, 'min_child_samples': 150, 'min_child_weight': 3, 'subsample': 1.0, 'colsample_bytree': 0.7, 'reg_alpha': 38.1, 'reg_lambda': 64.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.985
+2021-09-24 07:39:29.484 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 7, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 18, 'min_child_samples': 225, 'min_child_weight': 4, 'subsample': 0.9, 'colsample_bytree': 0.8, 'reg_alpha': 33.1, 'reg_lambda': 19.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.986
+2021-09-24 07:39:29.598 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 8, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 49, 'min_child_samples': 447, 'min_child_weight': 2, 'subsample': 1.0, 'colsample_bytree': 0.7, 'reg_alpha': 17.1, 'reg_lambda': 90.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.987
+2021-09-24 07:39:29.707 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 9, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 43, 'min_child_samples': 350, 'min_child_weight': 4, 'subsample': 0.9, 'colsample_bytree': 0.9, 'reg_alpha': 85.1, 'reg_lambda': 90.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.982
+2021-09-24 07:39:29.835 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 10, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 6, 'min_child_samples': 390, 'min_child_weight': 7, 'subsample': 0.8, 'colsample_bytree': 1.0, 'reg_alpha': 68.1, 'reg_lambda': 31.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.984
+2021-09-24 07:39:29.966 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 11, accuracy : 0.9814, Params : {'model_algo': 'lgb', 'num_leaves': 8, 'min_child_samples': 256, 'min_child_weight': 6, 'subsample': 1.0, 'colsample_bytree': 0.6, 'reg_alpha': 61.1, 'reg_lambda': 41.1}
+                        Accuracy : 0.981  F1_score_0 : 0.989  F1_score_1 : 0.918  Precision_0 : 0.983  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.875  Roc_auc : 0.984
+2021-09-24 07:39:30.114 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 12, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 50, 'min_child_samples': 302, 'min_child_weight': 6, 'subsample': 0.9, 'colsample_bytree': 1.0, 'reg_alpha': 55.1, 'reg_lambda': 50.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.984
+2021-09-24 07:39:30.247 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 13, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 38, 'min_child_samples': 391, 'min_child_weight': 1, 'subsample': 0.8, 'colsample_bytree': 0.9, 'reg_alpha': 74.1, 'reg_lambda': 53.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.985
+2021-09-24 07:39:30.379 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 14, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 12, 'min_child_samples': 253, 'min_child_weight': 6, 'subsample': 1.0, 'colsample_bytree': 0.7, 'reg_alpha': 47.1, 'reg_lambda': 4.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.985
+2021-09-24 07:39:30.512 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 15, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 26, 'min_child_samples': 191, 'min_child_weight': 5, 'subsample': 0.7, 'colsample_bytree': 0.6, 'reg_alpha': 25.1, 'reg_lambda': 75.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.923  Precision_0 : 0.984  Precision_1 : 0.971  Recall_0 : 0.996  Recall_1 : 0.88  Roc_auc : 0.985
+2021-09-24 07:39:30.645 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 16, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 45, 'min_child_samples': 281, 'min_child_weight': 5, 'subsample': 0.9, 'colsample_bytree': 0.8, 'reg_alpha': 49.1, 'reg_lambda': 28.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.985
+2021-09-24 07:39:30.775 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 17, accuracy : 0.9826, Params : {'model_algo': 'lgb', 'num_leaves': 50, 'min_child_samples': 459, 'min_child_weight': 1, 'subsample': 1.0, 'colsample_bytree': 1.0, 'reg_alpha': 0.1, 'reg_lambda': 86.1}
+                        Accuracy : 0.983  F1_score_0 : 0.99  F1_score_1 : 0.924  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.885  Roc_auc : 0.989
+2021-09-24 07:39:30.903 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 18, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 35, 'min_child_samples': 431, 'min_child_weight': 2, 'subsample': 0.8, 'colsample_bytree': 0.9, 'reg_alpha': 19.1, 'reg_lambda': 83.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.987
+2021-09-24 07:39:31.034 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 19, accuracy : 0.9832, Params : {'model_algo': 'lgb', 'num_leaves': 35, 'min_child_samples': 400, 'min_child_weight': 2, 'subsample': 0.6, 'colsample_bytree': 0.9, 'reg_alpha': 10.1, 'reg_lambda': 77.1}
+                        Accuracy : 0.983  F1_score_0 : 0.991  F1_score_1 : 0.927  Precision_0 : 0.985  Precision_1 : 0.966  Recall_0 : 0.996  Recall_1 : 0.891  Roc_auc : 0.988
+2021-09-24 07:39:31.130 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:131 - Best Model : lgb, Model Params : {'num_leaves': 10, 'min_child_samples': 288, 'min_child_weight': 1, 'subsample': 1.0, 'colsample_bytree': 1.0, 'reg_alpha': 56.1, 'reg_lambda': 64.1}
+2021-09-24 07:39:31.158 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:137 - Fold : 1, Train Shape : (6442, 10), Test Shape : (1611, 10)
+2021-09-24 07:39:31.174 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.983  Precision_1 : 0.966  Recall_1 : 0.891  F1_score_1 : 0.927  Precision_0 : 0.985  Recall_0 : 0.996  F1_score_0 : 0.991  Roc_auc : 0.986
+2021-09-24 07:39:31.177 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[1413    6]
+ [  21  171]]
+2021-09-24 07:39:31.184 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      1419
+           1       0.97      0.89      0.93       192
+
+    accuracy                           0.98      1611
+   macro avg       0.98      0.94      0.96      1611
+weighted avg       0.98      0.98      0.98      1611
+
+2021-09-24 07:39:31.267 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:137 - Fold : 2, Train Shape : (6442, 10), Test Shape : (1611, 10)
+2021-09-24 07:39:31.283 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.973  Precision_1 : 0.921  Recall_1 : 0.849  F1_score_1 : 0.883  Precision_0 : 0.98  Recall_0 : 0.99  F1_score_0 : 0.985  Roc_auc : 0.976
+2021-09-24 07:39:31.286 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[1405   14]
+ [  29  163]]
+2021-09-24 07:39:31.292 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      1419
+           1       0.92      0.85      0.88       192
+
+    accuracy                           0.97      1611
+   macro avg       0.95      0.92      0.93      1611
+weighted avg       0.97      0.97      0.97      1611
+
+2021-09-24 07:39:31.374 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:137 - Fold : 3, Train Shape : (6442, 10), Test Shape : (1611, 10)
+2021-09-24 07:39:31.389 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.979  Precision_1 : 0.954  Recall_1 : 0.865  F1_score_1 : 0.907  Precision_0 : 0.982  Recall_0 : 0.994  F1_score_0 : 0.988  Roc_auc : 0.975
+2021-09-24 07:39:31.392 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[1411    8]
+ [  26  166]]
+2021-09-24 07:39:31.398 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      1419
+           1       0.95      0.86      0.91       192
+
+    accuracy                           0.98      1611
+   macro avg       0.97      0.93      0.95      1611
+weighted avg       0.98      0.98      0.98      1611
+
+2021-09-24 07:39:31.475 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:137 - Fold : 4, Train Shape : (6443, 10), Test Shape : (1610, 10)
+2021-09-24 07:39:31.490 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.968  Precision_1 : 0.938  Recall_1 : 0.785  F1_score_1 : 0.855  Precision_0 : 0.972  Recall_0 : 0.993  F1_score_0 : 0.982  Roc_auc : 0.952
+2021-09-24 07:39:31.493 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[1409   10]
+ [  41  150]]
+2021-09-24 07:39:31.500 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      1419
+           1       0.94      0.79      0.85       191
+
+    accuracy                           0.97      1610
+   macro avg       0.95      0.89      0.92      1610
+weighted avg       0.97      0.97      0.97      1610
+
+2021-09-24 07:39:31.576 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:137 - Fold : 5, Train Shape : (6443, 10), Test Shape : (1610, 10)
+2021-09-24 07:39:31.591 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.968  Precision_1 : 0.933  Recall_1 : 0.792  F1_score_1 : 0.856  Precision_0 : 0.972  Recall_0 : 0.992  F1_score_0 : 0.982  Roc_auc : 0.953
+2021-09-24 07:39:31.594 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[1407   11]
+ [  40  152]]
+2021-09-24 07:39:31.601 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      1418
+           1       0.93      0.79      0.86       192
+
+    accuracy                           0.97      1610
+   macro avg       0.95      0.89      0.92      1610
+weighted avg       0.97      0.97      0.97      1610
+
+2021-09-24 07:39:31.659 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:148 - Feature Importance : 
++----+----------------------------------+--------------+
+|    | features                         |   importance |
+|----+----------------------------------+--------------|
+|  0 | customer_ctr_score               |    0.548309  |
+|  1 | customer_product_variation_score |    0.253165  |
+|  2 | customer_frequency_score         |    0.113728  |
+|  3 | customer_order_score             |    0.0458776 |
+|  4 | customer_stay_score              |    0.0269385 |
+|  5 | customer_affinity_score          |    0.011982  |
+|  6 | X1                               |    0         |
+|  7 | customer_active_segment          |    0         |
+|  8 | customer_product_search_score    |    0         |
+|  9 | customer_visit_score             |    0         |
++----+----------------------------------+--------------+
+2021-09-24 07:39:31.665 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:152 - Metrics by different Cut Offs : 
++----------------+------------+---------------+------------+--------------+---------------+------------+--------------+
+|   prob_cut_off |   accuracy |   precision_1 |   recall_1 |   f1_score_1 |   precision_0 |   recall_0 |   f1_score_0 |
+|----------------+------------+---------------+------------+--------------+---------------+------------+--------------|
+|           0.5  |   0.974418 |      0.942209 |   0.836235 |     0.885688 |      0.978224 |   0.993093 |     0.985596 |
+|           0.55 |   0.97417  |      0.946537 |   0.829985 |     0.883842 |      0.97743  |   0.993657 |     0.985468 |
+|           0.6  |   0.973921 |      0.947406 |   0.82686  |     0.882526 |      0.977023 |   0.993798 |     0.985331 |
+|           0.65 |   0.973176 |      0.951426 |   0.816432 |     0.878323 |      0.97568  |   0.994362 |     0.984926 |
+|           0.7  |   0.971811 |      0.958513 |   0.797682 |     0.870261 |      0.973285 |   0.995348 |     0.984187 |
++----------------+------------+---------------+------------+--------------+---------------+------------+--------------+
+2021-09-24 07:39:31.667 | INFO     | src.ARKAutoML.ARKAutoML:get_crossvalidated_results_for_best_model:155 - *** Cross Validated Final Results : *** 
+Accuracy : 0.974  Precision_1 : 0.942  Recall_1 : 0.836  F1_score_1 : 0.886  Precision_0 : 0.978  Recall_0 : 0.993  F1_score_0 : 0.986  Roc_auc : 0.968
+2021-09-24 07:39:31.780 | INFO     | src.ARKAutoML.ARKAutoML:train_best_model:188 - Training "lgb" Model with Best Params : {'num_leaves': 10, 'min_child_samples': 288, 'min_child_weight': 1, 'subsample': 1.0, 'colsample_bytree': 1.0, 'reg_alpha': 56.1, 'reg_lambda': 64.1}
+2021-09-24 07:39:31.843 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.975  Precision_1 : 0.94  Recall_1 : 0.839  F1_score_1 : 0.887  Precision_0 : 0.979  Recall_0 : 0.993  F1_score_0 : 0.986  Roc_auc : 0.973
+2021-09-24 07:39:31.850 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[7043   51]
+ [ 154  805]]
+2021-09-24 07:39:31.864 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      7094
+           1       0.94      0.84      0.89       959
+
+    accuracy                           0.97      8053
+   macro avg       0.96      0.92      0.94      8053
+weighted avg       0.97      0.97      0.97      8053
+
+2021-09-24 07:39:31.869 | INFO     | src.ARKAutoML.ARKAutoML:train_best_model:194 - Best Model Feature Importance : 
++----+----------------------------------+--------------+
+|    | features                         |   importance |
+|----+----------------------------------+--------------|
+|  0 | customer_ctr_score               |    0.549587  |
+|  1 | customer_product_variation_score |    0.260331  |
+|  2 | customer_frequency_score         |    0.0991736 |
+|  3 | customer_order_score             |    0.0454545 |
+|  4 | customer_stay_score              |    0.0247934 |
+|  5 | customer_affinity_score          |    0.0206612 |
+|  6 | customer_active_segment          |    0         |
+|  7 | X1                               |    0         |
+|  8 | customer_visit_score             |    0         |
+|  9 | customer_product_search_score    |    0         |
++----+----------------------------------+--------------+
+2021-09-24 07:39:31.905 | INFO     | src.ARKAutoML.ARKAutoML:score_validation_data:217 - Scoring Validation Data : Validation Shape : (2685, 10)
+2021-09-24 07:39:31.924 | INFO     | src.ARKAutoML.metrics:model_metrics:43 - Accuracy : 0.975  Precision_1 : 0.935  Recall_1 : 0.863  F1_score_1 : 0.898  Precision_0 : 0.981  Recall_0 : 0.991  F1_score_0 : 0.986  Roc_auc : 0.976
+2021-09-24 07:39:31.928 | INFO     | src.ARKAutoML.metrics:model_metrics:44 - 
+ [[2329   20]
+ [  46  290]]
+2021-09-24 07:39:31.935 | INFO     | src.ARKAutoML.metrics:model_metrics:45 - 
+               precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      2349
+           1       0.94      0.86      0.90       336
+
+    accuracy                           0.98      2685
+   macro avg       0.96      0.93      0.94      2685
+weighted avg       0.97      0.98      0.97      2685
+
+2021-09-24 07:39:32.000 | INFO     | src.ARKAutoML.ARKAutoML:score_validation_data:220 - Metrics by different Cut Offs : 
++----------------+------------+---------------+------------+--------------+---------------+------------+--------------+
+|   prob_cut_off |   accuracy |   precision_1 |   recall_1 |   f1_score_1 |   precision_0 |   recall_0 |   f1_score_0 |
+|----------------+------------+---------------+------------+--------------+---------------+------------+--------------|
+|           0.5  |   0.975419 |      0.935484 |   0.863095 |     0.897833 |      0.980632 |   0.991486 |     0.986029 |
+|           0.55 |   0.975791 |      0.944262 |   0.857143 |     0.898596 |      0.979832 |   0.992763 |     0.986255 |
+|           0.6  |   0.976536 |      0.953488 |   0.854167 |     0.901099 |      0.979446 |   0.99404  |     0.986689 |
+|           0.65 |   0.976909 |      0.956667 |   0.854167 |     0.902516 |      0.979455 |   0.994466 |     0.986903 |
+|           0.7  |   0.975791 |      0.959322 |   0.842262 |     0.896989 |      0.977824 |   0.994891 |     0.986284 |
++----------------+------------+---------------+------------+--------------+---------------+------------+--------------+
+2021-09-24 07:39:32.042 | INFO     | src.ARKAutoML.ARKAutoML:save_best_model:203 - ..\output\MySampleProject\Sample_1\models\best_model_preprocessor.pkl
+2021-09-24 07:39:32.043 | INFO     | src.ARKAutoML.ARKAutoML:save_best_model:204 - ..\output\MySampleProject\Sample_1\models\best_model.pkl
+2021-09-24 07:39:32.173 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:32.173 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:32.283 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:32.283 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:32.283 | INFO     | src.ARKAutoML.ARKAutoML:add_project_config_to_logs:41 - 
+{'BASE_INPUT_PATH': '../input/',
+ 'BASE_OUTPUT_PATH': '../output/',
+ 'DATA_PATH': '../input/../input/train.csv',
+ 'FILE_NAME': '../input/train.csv',
+ 'FOLD_METHOD': 'StratifiedKFold',
+ 'PROBLEM_TYPE': 'classification',
+ 'PROJECT_NAME': 'MySampleProject',
+ 'SUB_PROJECT_NAME': 'Sample_1',
+ 'TARGET_COL': 'customer_category',
+ 'cat_cols': ['customer_active_segment', 'X1'],
+ 'cont_cols': ['customer_visit_score',
+               'customer_product_search_score',
+               'customer_ctr_score',
+               'customer_stay_score',
+               'customer_frequency_score',
+               'customer_product_variation_score',
+               'customer_order_score',
+               'customer_affinity_score']}
+2021-09-24 07:39:33.996 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 0, accuracy : 0.9739, Params : {'model_algo': 'rf', 'max_depth': 8, 'n_estimators': 768, 'min_samples_split': 30, 'min_samples_leaf': 46}
+                        Accuracy : 0.974  F1_score_0 : 0.985  F1_score_1 : 0.892  Precision_0 : 0.98  Precision_1 : 0.926  Recall_0 : 0.99  Recall_1 : 0.86  Roc_auc : 0.977
+2021-09-24 07:39:33.996 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 0, accuracy : 0.9739, Params : {'model_algo': 'rf', 'max_depth': 8, 'n_estimators': 768, 'min_samples_split': 30, 'min_samples_leaf': 46}
+                        Accuracy : 0.974  F1_score_0 : 0.985  F1_score_1 : 0.892  Precision_0 : 0.98  Precision_1 : 0.926  Recall_0 : 0.99  Recall_1 : 0.86  Roc_auc : 0.977
+2021-09-24 07:39:33.996 | INFO     | src.ARKAutoML.ARKAutoML:objective:77 - Trial No : 0, accuracy : 0.9739, Params : {'model_algo': 'rf', 'max_depth': 8, 'n_estimators': 768, 'min_samples_split': 30, 'min_samples_leaf': 46}
+                        Accuracy : 0.974  F1_score_0 : 0.985  F1_score_1 : 0.892  Precision_0 : 0.98  Precision_1 : 0.926  Recall_0 : 0.99  Recall_1 : 0.86  Roc_auc : 0.977
