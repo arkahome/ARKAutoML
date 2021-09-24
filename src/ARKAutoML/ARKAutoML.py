@@ -12,6 +12,7 @@ from loguru import logger
 from pathlib import Path
 from tabulate import tabulate
 import pprint
+import random
 
 class ProjectConfigurator:
     def __init__(self, config) -> None:
@@ -33,8 +34,9 @@ class ProjectConfigurator:
     #     shutil.copy('config.py', str(self.output_path))
 
     def add_logger_path(self):
-        self.logger = logger
-        self.logger.add(str(self.output_path/'logfile.log'))
+        logger_name = str(random.randint(0,10000))
+        self.logger = logger.bind(name = logger_name)
+        self.logger.add(str(self.output_path/'logfile.log'), filter=lambda record: record["extra"].get("name") == logger_name)
     
     def add_project_config_to_logs(self, config):
         bc_attrs = {i : getattr(config, i) for i in self.key_attrs }
