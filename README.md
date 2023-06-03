@@ -11,3 +11,13 @@ For people from the East :
 For people from the West : 
 
 3. In Old Testament(Bible), Noah's ARK is the vessel that saved the humankind from the devastating flood. ARK-AutoML aspires to be the similar vessel that saves the entire data science clan from the flood of data and workload.
+
+
+To install ARKAutoML :
+
+```
+git clone https://github.com/arkahome/ARKAutoML.git
+cd ARKAutoML
+python setup.py sdist
+pip install .\dist\arkautoml-1.0.0.tar.gz
+```
